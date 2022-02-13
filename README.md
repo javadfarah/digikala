@@ -38,4 +38,4 @@ ps:
 
 >even crontab not runing on (playwright official docker image)
 
->so if any one wants do this seleniume is much beter!
+>so if any one wants to do this seleniume is much beter!
