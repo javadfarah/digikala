@@ -8,7 +8,6 @@ import logging
 import os
 
 #change the database uri 
-
 mydb = Database(f'mongodb://{os.environ["MONGODB_USERNAME"]}:{os.environ["MONGODB_PASSWORD"]}@{os.environ["MONGODB_HOSTNAME"]}:27017/')
 
 async def worker(context, url: str):
