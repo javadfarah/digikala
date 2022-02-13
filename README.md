@@ -32,7 +32,10 @@ TODO
 
 ps:
 
-`i waste my time too much to use playwright!`
-`i couldent run celery on this countainer because of wasting time on playwright and celery not working in this docker image`
-`even crontab not runing on (playwright official docker image)`
-`so if any one wants do this seleniume is much beter!`
+>i waste my time too much to use playwright!
+
+>i couldent run celery on this countainer because of wasting time on playwright and celery not working in this docker image
+
+>even crontab not runing on (playwright official docker image)
+
+>so if any one wants do this seleniume is much beter!
