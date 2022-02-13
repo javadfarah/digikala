@@ -1,0 +1,52 @@
+version: '5'
+services:
+
+  python:
+    build:
+      dockerfile: Dockerfile
+    container_name: digikala
+    environment:
+      PYTHONUNBUFFERED: 1
+      MONGODB_DATABASE: digikala
+      MONGODB_USERNAME: mongodbuser
+      MONGODB_PASSWORD: farah19mj
+      MONGODB_HOSTNAME: mongodb
+    volumes:
+      - appdata:/data/src
+    depends_on:
+      - mongodb
+    networks:
+      - frontend
+      - backend
+
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongodbuser
+      MONGO_INITDB_ROOT_PASSWORD: farah19mj
+      MONGODB_DATA_DIR: /data/db
+      MONDODB_LOG_DIR: /dev/null
+    volumes:
+      - mongodbdata:/data/db
+    networks:
+      - backend
+  
+
+
+
+
+networks:
+  frontend:
+    driver: bridge
+  backend:
+    driver: bridge
+
+
+volumes:
+  mongodbdata:
+    driver: local
+  appdata:
+    driver: local
+

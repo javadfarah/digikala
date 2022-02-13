@@ -1,0 +1,6 @@
+greenlet==1.1.2
+lxml==4.7.1
+playwright~=1.18.2
+pyee==8.1.0
+pymongo==4.0.1
+websockets==10.1
