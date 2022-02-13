@@ -20,13 +20,19 @@ change mongodb username & password
 
 in docker-compose file find this lines and change:
 
-`
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: your username
-      MONGO_INITDB_ROOT_PASSWORD: your password
-`
+`MONGO_INITDB_ROOT_USERNAME: your username`
+
+
+`MONGO_INITDB_ROOT_PASSWORD: your password`
 
 TODO
+
+`use celery for schedule periodic task
 `
-use celery for schedule periodic task
-`
+
+ps:
+
+`i waste my time too much to use playwright!`
+`i couldent run celery on this countainer because of wasting time on playwright and celery not working in this docker image`
+`even crontab not runing on (playwright official docker image)`
+`so if any one wants do this seleniume is much beter!`
